@@ -1,0 +1,31 @@
+.m-table {
+    margin: 0 auto;
+    &__header {
+        background-color: $nav-bar-back;
+        p {
+            color: white;
+            flex-basis: 20%;
+            text-align: left;
+            padding: $padding/2 $padding*2;
+            font-weight: bold;
+        }
+    }
+}
+.content-table:nth-of-type(even) {
+    background-color: $color-grey-light;
+}
+.table-row {
+    padding-left: $padding;
+}
+
+.row-left {
+    margin: $margin6 0;
+    flex-basis: 20%;
+    text-align: left;
+}
+.row-center {
+    margin: $margin6 0;
+    flex-basis: 20%;
+    text-align: center;
+}
+

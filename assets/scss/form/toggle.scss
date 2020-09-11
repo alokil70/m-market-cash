@@ -1,0 +1,41 @@
+.toggle {
+    --width: 40px;
+    --height: calc(var(--width) / 2);
+    --border-radius: calc(var(--height) / 2);
+    display: inline-block;
+    cursor: pointer;
+
+    &__input {
+        display: none;
+    }
+
+    &__fill {
+        position: relative;
+        width: var(--width);
+        height: var(--height);
+        border-radius: var(--border-radius);
+        background-color: $color-grey;
+        transition: background 0.2s;
+    }
+
+    &__input:checked ~ &__fill {
+        background-color: $color-green2;
+    }
+
+    &__fill::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: var(--height);
+        width: var(--height);
+        background-color: $color-white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+        border-radius: var(--border-radius);
+        transition: transform 0.2s;
+    }
+
+    &__input:checked ~ &__fill::after {
+        transform: translateX(var(--height));
+    }
+}

@@ -1,0 +1,26 @@
+.m-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: $padding/2 $padding;
+    color: $color-white;
+    /*border-radius: 4px;*/
+    height: 100%;
+    width: 100%;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.m-btn:hover {
+    background: $color-alt-hover;
+}
+
+.material-icons {
+    margin-right: 8px;
+}
+
+.disabled {
+    pointer-events: none;
+    background-color: #aeaeae;
+}

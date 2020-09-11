@@ -1,0 +1,31 @@
+.left-bar {
+    z-index: 98;
+    position: fixed;
+    left: 0;
+    top: $nav-bar-height;
+    color: $color-white;
+    background-color: $left-bar-back;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    width: $left-bar-width;
+    flex-direction: column;
+    ul {
+        display: block;
+        margin: 30px 0 $nav-bar-height 0;
+    }
+    a {
+        display: block;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: $padding;
+        line-height: 1;
+        cursor: pointer;
+        transition: .4s;
+
+        &:hover, &.nuxt-link-exact-active {
+            color: $color-white;
+            background-color: $color-alt;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.def-card {
+    &:hover {
+        color: $color-white;
+        font-weight: bold;
+        background-color: $color-alt;
+    }
+}
+
+a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    line-height: 1;
+    cursor: pointer;
+}

@@ -1,0 +1,236 @@
+@import 'variables';
+
+@import "font-size/font-size";
+@import "font-size/headers";
+
+@import 'nav-bars/navbar';
+@import 'nav-bars/left-bar';
+
+@import "button/btn";
+@import "button/m-btn";
+
+@import "card/card";
+@import "card/auth-card";
+@import "card/def-card";
+
+@import "color/colors";
+
+@import "table/m-table";
+
+@import "form/input";
+@import "form/toggle";
+@import "form/form";
+
+
+@import "size/height";
+@import "size/width";
+@import "size/margin";
+@import "size/padding";
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',Tahoma, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+body {
+    background-color: $color-body;
+    min-height: 100vh;
+    h1 {
+        font-weight: normal;
+    }
+}
+
+.bg_title {
+    background-color: $left-bar-back;
+}
+.container {
+    margin: $nav-bar-height+$margin $margin 0 $margin;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.flex {
+    display: flex;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.flex-col {
+    flex-direction: column;
+}
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+.flex-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-center-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.w30p {
+    width: 30%;
+}
+.min-h300{
+    min-height: 300px;
+}
+.min-w180{
+    min-width: 180px;
+}
+.min-w280{
+    min-width: 280px;
+}
+.p5-0 {
+    padding: $padding-5 0;
+}
+.m6 {
+    margin: $margin6;
+}
+.m12 {
+    margin: $margin6*2;
+}
+.m24 {
+    margin: $margin6*4;
+}
+.mb6 {
+    margin-bottom: $margin6;
+}
+.mb12 {
+    margin-bottom: $margin6*2;
+}
+.error-color {
+    color: $color-alt;
+    margin: 5px;
+    text-transform: uppercase;
+}
+
+.empty-page {
+    margin: 0;
+    background-color: $color-empty-back;
+    min-height: 100vh;
+}
+
+.default-page {
+    background-color: $color-body;
+    min-height: 100vh;
+}
+
+.w50 {
+    width: 50px;
+}
+
+.w100 {
+    width: 100px;
+}
+
+.w200 {
+    width: 200px;
+}
+
+.w400 {
+    width: 400px;
+}
+.w460 {
+    width: 460px;
+}
+
+.w1100 {
+    width: 1100px;
+}
+
+.page-enter-active, .page-leave-active {
+    transition: opacity .2s;
+}
+
+.page-enter, .page-leave-to {
+    opacity: 0;
+}
+
+
+
+.admin-form {
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 9;
+
+    .w100 {
+        width: 100%;
+    }
+
+    .w50 {
+        width: 50%;
+    }
+
+    .w25 {
+        width: 25%;
+    }
+
+    .w12 {
+        width: 12.5%;
+    }
+
+    .form-group {
+        padding: $margin/2;
+        box-sizing: border-box;
+
+        .form-error-message {
+            color: $color-alt;
+            display: block;
+            height: 0;
+            font-size: 12px;
+        }
+
+        label {
+            display: inline-block;
+            margin-bottom: 2px;
+        }
+
+        .admin-buttons-block {
+            display: flex;
+            justify-content: space-between;
+            margin: $margin/2 0;
+        }
+
+        .admin-input {
+            width: 100%;
+            padding: $padding/2;
+            margin: 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+            outline: 0;
+        }
+        .admin-button{
+            border: 0;
+            background-color: $color-alt;
+            border-radius: 16px;
+            color: white;
+            cursor: pointer;
+            padding: $padding/2 $padding*2;
+            width: auto;
+            &:disabled{
+                background-color: #aaa;
+                cursor: not-allowed;
+            }
+            &.admin-delete{
+                background-color: #000;
+            }
+        }
+    }
+}
