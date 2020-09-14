@@ -1,4 +1,4 @@
-import { URL } from './config/var'
+import { URL2 } from './config/var'
 
 export default {
     /*
@@ -95,7 +95,7 @@ export default {
         },
     },
     axios: {
-        baseURL: URL,
+        baseURL: URL2,
     },
     webfontloader: {
         events: false,
@@ -109,7 +109,7 @@ export default {
      ** See https://nuxtjs.org/api/configuration-build/
      */
     server: {
-        port: 3031,
+        port: 3037,
         host: '0.0.0.0',
     },
     build: {},
